@@ -2,7 +2,6 @@ import csv
 
 fileName = "budget_data.csv"
 newFile = "financial_analysis.txt"
-net_tot = 0
 
 with open(fileName, 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
@@ -12,6 +11,7 @@ with open(fileName, 'r') as csv_file:
         rows.append(row)
 
 cont = len(rows)
+net_tot = 0
 sum_prom = 0
 greatest_in = 0
 greatest_de = 0
